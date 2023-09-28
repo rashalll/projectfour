@@ -1,0 +1,106 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card {
+    padding: 16px 32px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 2px 5px 28px -4px rgba(128, 128, 128, 0.75);
+    -webkit-box-shadow: 2px 5px 28px -4px rgba(128, 128, 128, 0.75);
+    -moz-box-shadow: 2px 5px 28px -4px rgba(128, 128, 128, 0.75);
+}
+
+.card h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.card div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.card label {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.card input {
+    font-size: 20px;
+    font-weight: 400;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 5px;
+    outline: none;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn button {
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(17, 234, 191);
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.message {
+    text-align: center;
+    font-size: 14px;
+    color: red;
+}
+
+form p {
+    text-align: center;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 576px) {
+
+    .card {
+        padding: 8px 16px;
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .card h2 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .card label {
+        font-size: 16px;
+    }
+
+    .card input {
+        font-size: 16px;
+        font-weight: 400;
+        height: 30px;
+    }
+
+    .message {
+        font-size: 12px;
+    }
+
+    form p {
+        font-size: 14px;
+    }
+}

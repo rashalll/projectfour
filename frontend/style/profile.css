@@ -1,0 +1,415 @@
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 32px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0px;
+}
+
+.profile h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.profile p {
+    font-size: 16px;
+    margin: 5px 0px 20px;
+}
+
+.profile button {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(19, 244, 177);
+}
+
+.userBlogs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.blogHeader {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    padding: 16px;
+    width: 70%;
+}
+
+.blog-container h4 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.blog-container p {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 38px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+}
+
+.blog-container .btn-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.blog-container .btn-container button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: rgb(19, 244, 177);
+}
+
+.cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+.profileForm {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.profileForm label {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+.profileForm input {
+    width: 100%;
+    margin: 5px 0px 20px;
+    height: 40px;
+    padding-left: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid grey;
+}
+
+.profileForm .btnContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 0px 50px 30px;
+}
+
+.profileForm .btnContainer button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.discardBtn {
+    background-color: red;
+}
+
+.confirmBtn {
+    background-color: greenyellow;
+}
+
+.blogContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.blogBtnContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.blogBtnContainer button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.blogDiscardBtn {
+    background-color: yellow;
+}
+
+.blogDeleteBtn {
+    background-color: red;
+}
+
+.blogConfirmBtn {
+    background-color: green;
+}
+
+.currentBlogContainer {
+    display: flex;
+}
+
+.blogContent {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.blogTitle {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.blogContentContainer {
+    height: 500px;
+    overflow-y: scroll;
+    margin-top: 30px;
+}
+
+.blogContentContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.blogContentContainer p {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: justify;
+}
+
+.blogComments {
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    min-height: 100%;
+    overflow-y: scroll;
+    margin: 30px 0px 10px 10px;
+    min-height: 100%;
+    box-shadow: 2px 5px 28px -4px rgba(128, 128, 128, 0.75);
+    -webkit-box-shadow: 2px 5px 28px -4px rgba(128, 128, 128, 0.75);
+    -moz-box-shadow: 2px 5px 28px -4px rgba(128, 128, 128, 0.75);
+    padding: 16px;
+}
+
+.blogComments::-webkit-scrollbar {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+.eachComments {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    width: 100%;
+    border-bottom: 1px solid #828283;
+}
+
+.eachComments h3 {
+    margin: 0;
+    font-size: 16px;
+
+}
+
+.eachComments p {
+    margin: 5px 0px 10px;
+}
+
+.addBlog {
+    position: fixed;
+    bottom: 100px;
+    right: 60px;
+    padding: 16px 32px;
+    background-color: rgb(111, 204, 57);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 30px;
+}
+
+
+@media screen and (max-width: 576px) {
+    main {
+        padding: 8px 16px 70px;
+    }
+
+    .profile {
+        margin: 30px 0px;
+    }
+
+    .profile h2 {
+        font-size: 26px;
+    }
+
+    .profile p {
+        font-size: 16px;
+        margin: 0px 0px 20px;
+    }
+
+    .profile button {
+        width: 120px;
+        font-size: 14px;
+    }
+
+    .blogHeader {
+        font-size: 24px;
+        width: 100%;
+    }
+
+    .blog-container {
+        padding: 8px 0px;
+        width: 100%;
+        border-bottom: 1px solid #000000;
+    }
+
+    .blog-container h4 {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .blog-container p {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .blog-container .btn-container {
+        margin-top: 20px;
+    }
+
+    .blog-container .btn-container button {
+        width: 80px;
+        font-size: 14px;
+    }
+
+    .profileForm {
+        max-width: 350px;
+    }
+
+    .profileForm label {
+        font-size: 16px;
+    }
+
+    .profileForm input {
+        height: 35px;
+        font-size: 1px;
+    }
+
+    .profileForm .btnContainer {
+        margin-top: 20px;
+        padding: 0px 10px 20px;
+    }
+
+    .profileForm .btnContainer button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .blogContainer {
+        padding: 16px;
+        width: 95%;
+        max-width: 800px;
+    }
+
+    .blogBtnContainer button {
+        width: 35px;
+        height: 35px;
+    }
+
+    .currentBlogContainer {
+        flex-direction: column;
+    }
+
+    .blogContent {
+        width: 100%;
+    }
+
+    .blogTitle {
+        font-size: 18px;
+        margin: 20px 0px 0px;
+    }
+
+    .blogContentContainer {
+        height: 300px;
+        margin-top: 10px;
+    }
+
+    .blogContentContainer p {
+        font-size: 16px;
+    }
+
+    .blogComments {
+        width: 100%;
+        margin: 30px 0px 10px;
+        min-height: 200px;
+        max-height: 300px;
+    }
+
+    .eachComments {
+        margin-bottom: 20px;
+    }
+
+    .eachComments p {
+        font-size: 14px;
+    }
+
+    .addBlog {
+        bottom: 80px;
+        right: 20px;
+        padding: 16px 16px;
+        font-size: 16px;
+    }
+}

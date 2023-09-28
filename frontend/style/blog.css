@@ -1,0 +1,156 @@
+main {
+    display: flex;
+    padding: 16px 32px;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+    max-height: calc(100vh-120px);
+}
+
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    min-height: 100%;
+    overflow-y: scroll;
+}
+
+.blog-container ::-webkit-scrollbar {
+    display: none;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.blog-authur {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.blog-body {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 34px;
+}
+
+.comment-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+    min-height: 100%;
+    box-shadow: 2px 5px 28px -4px rgba(127, 129, 128, 1);
+    -webkit-box-shadow: 2px 5px 28px -4px rgba(127, 129, 128, 1);
+    -moz-box-shadow: 2px 5px 28px -4px rgba(128, 128, 128, 128);
+    padding: 16px 32px;
+}
+
+.comments {
+    width: 100%;
+    height: calc(100% - 70px);
+    overflow-y: scroll;
+}
+
+.comments::-webkit-scrollbar {
+    display: none;
+}
+
+.eachComments {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    width: 100%;
+    border-bottom: 1px solid #828283;
+}
+
+.eachComments h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.eachComments p {
+    margin: 5px 0px 10px;
+}
+
+.commentError {
+    margin: 10px 0px 5px;
+    color: red;
+    font-size: 14px;
+}
+
+.addComment {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.newComment {
+    height: 45px;
+    flex-grow: 1;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.sendComment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+    main {
+        padding: 8px 16px 70px;
+        flex-direction: column;
+        max-height: calc(100vh - 80px);
+    }
+
+    .blog-container {
+        width: 100%;
+        max-height: calc(100vh - 80px);
+    }
+
+    h2 {
+        font-size: 28px;
+        margin: 30px 0px 0px;
+    }
+
+    .blog-authur {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .blog-body {
+        font-size: 16px;
+    }
+
+    .comment-container {
+        
+        width: 100%;
+        min-height: 300px;
+        max-height: 500px;
+    }
+
+    .eachComments {
+        margin-bottom: 20px;
+    }
+
+    .eachComments p {
+        font-size: 14px;
+    }
+
+    .addBlog {
+        bottom: 80px;
+        right: 20px;
+        padding: 16px 16px;
+        font-size: 16px;
+    }
+}

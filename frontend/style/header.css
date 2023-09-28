@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: :0;
+    padding: 0;
+    max-width: 100vw;
+    min-height: 100vh;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 35px;
+    background-color: chocolate;
+    position: relative;
+    height: 120px;
+
+}
+
+header h1,
+header a {
+    font-size: 40px;
+    margin: 0;
+    font-weight: 900;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+header button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+header button p {
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s ease;
+}
+
+.icon-true {
+    transform: rotateZ(180deg);
+}
+
+.dropdown {
+    position: absolute;
+    right: 36px;
+    top: 90px;
+    transition: 0.7s ease;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-false {
+    display: none;
+}
+
+.dropdown-true {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    padding: 15px;
+    box-shadow: 2px 7px 29px -4px rgba(129, 127, 128, 0.75);
+    -web-box-shadow: 2px 5px 28px -4px rgba(129, 127, 128, 0.75);
+    -moz-box-shadow: 2px 5px 28px -4px rgba(129, 127, 128, 0.75);
+}
+
+.dropdown a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.dropdown a:last-child {
+    margin-bottom: 0;
+}
+
+main {
+    min-height: calc(100vh-120px);
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        padding: 8px 16px;
+        height: 80px;
+    }
+
+    header h1,
+    header a {
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    .dropdown {
+        right: 7px;
+        top: 70px;
+    }
+
+    main {
+        min-height: calc(100vh-80px);
+    }
+}
